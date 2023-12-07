@@ -1,28 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('master2')
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Data Pegawai</h3>
+@section('title', 'Data Pegawai')
 
-	<a href="/pegawai"> Kembali</a>
+@section('konten')
+    <title>Tambah Data Pegawai</title>
 
-	<br/>
-	<br/>
+    <table class=" table table-hover">
+        <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+        <h3>Tambah Data Pegawai</h3>
 
-	<form action="/pegawai/store" method="post">
-		{{ csrf_field() }}
-		Nama <input type="text" name="nama"> <br/>
-		Jabatan <input type="text" name="jabatan"> <br/>
-		Umur <input type="number" name="umur"> <br/>
-		Alamat <textarea name="alamat"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
+        <a href="/pegawai" class="btn btn-secondary"> Kembali</a>
 
+        <form action="/pegawai/store" method="post" class="form-horizontal">
+            {{ csrf_field() }}
+            <tr>
+            <tr>
+                <div class="form-group row">
+                    <td><label for="first_name" class="col-xs-3 col-form-label mr-2">Nama</label></td>
+                    <td>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" id="nama" name="nama">
+                        </div>
+                    </td>
+                </div>
+            </tr>{{-- Lakukan ulang untuk Jabatan, Umur, dan Alamat --}}
+            <tr>
+                <div class="form-group row">
+                    <td><label for="first_name" class="col-xs-3 col-form-label mr-2">Jabatan</label></td>
+                    <td>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" id="jabatan" name="jabatan">
+                        </div>
+                    </td>
+                </div>
+            </tr>
+            <tr>
+                <div class="form-group row">
+                    <td><label for="first_name" class="col-xs-3 col-form-label mr-2">Umur</label></td>
+                    <td>
+                        <div class="col-xs-9">
+                            <input type="number" class="form-control" id="umur" name="umur">
+                        </div>
+                    </td>
+                </div>
+            </tr>
+            <tr>
+                <div class="form-group row">
+                    <td> <label for="first_name" class="col-xs-3 col-form-label mr-2">Alamat</label></td>
+                    <td>
+                        <div class="col-xs-9">
+                            <textarea type="text" class="form-control" id="alamat" name="alamat"> </textarea>
+                        </div>
+                    </td>
+                </div>
+            </tr>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Simpan Data" class="btn btn-success"> <br /></td>
+            </tr>
 
+        </form>
+    </table>
 
-</body>
-</html>
+@endsection
