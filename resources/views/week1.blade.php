@@ -14,7 +14,7 @@
     <br>
     Apakah hari ini baik-baik saja?
     coba deng
-    ini bisa ga di push bismillah last try buat ngepush
+    ini bisa ga di push bismillah last try buat ngepush hah
     <br>
     Semoga besok baik-baik saja
     <br>
