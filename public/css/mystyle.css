@@ -1,0 +1,36 @@
+body {
+    font-family: "Sofia", sans-serif;
+}
+
+.sembunyi {
+    display: none;
+}
+
+a:link {
+    text-decoration: none;
+    color:blue;
+}
+
+a:visited {
+    text-decoration: none;
+    color:blue;
+}
+
+a:hover {
+    text-decoration: none;
+    color:orange;
+    font-weight: bold;
+}
+
+.profilepicture {
+    border-radius: 50%;
+}
+
+.fotobiasa {
+    border-radius: 25px;
+}
+
+.fotoframe {
+    border: 8px solid pink;
+    border-radius: 24px;
+}
