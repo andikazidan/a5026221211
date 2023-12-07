@@ -13,12 +13,12 @@
     Bagaimana kabar deadline tugas kamu?
     <br>
     Apakah hari ini baik-baik saja?
+    coba deng
     <br>
     Semoga besok baik-baik saja
     <br>
     Hari ini menyenangkan
     <br>
-    coba deng
     <br>
     coba kamu lihat di sebelah tab nama, ada lingkaran bulat, artinya belum disave,
     <p>
