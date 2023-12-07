@@ -48,7 +48,7 @@
     </strong>
     <br>
     <b>
-        coba syntax baaa
+        coba syntax baaammm
     </b>
     <br>
         ternyata syntax b dan strong tuh sama njir
