@@ -12,48 +12,38 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <!-- Brand -->
-        <a class="navbar-brand" href='/pegawai'>Muhammad Alvin - 5026221151</a>
-
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href='/pegawai/tambah'>Tambah 1 Data</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
-            </li>
-
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    Database
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/pegawai'>Pegawai</a>
-                    <a class="dropdown-item" href='/pegawai/tambah'>Tambah Data Pegawai</a>
-                    <a class="dropdown-item" href="#">Edit Data Pegawai</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
 
     <div class="container">
+        <header>
 
+            <h2>Blog MalasNgoding</h2>
+            <nav>
+                <a href="/blog">HOME</a>
+                |
+                <a href="/blog/tentang">TENTANG</a>
+                |
+                <a href="/blog/kontak">KONTAK</a>
+            </nav>
+        </header>
         <hr />
         <br />
         <br />
 
         <!-- bagian judul halaman blog -->
+        <h3> @yield('judul_halaman') </h3>
 
 
         <!-- bagian konten blog -->
         @yield('konten')
 
 
-
-        @include('footer')
+        <br />
+        <br />
+        @yield('bawah')
+        <hr />
+        <footer>
+            <p>&copy; <a href="https://www.malasngoding.com">www.malasngoding.com</a>. 2018 - 2019</p>
+        </footer>
     </div>
 
 </body>
