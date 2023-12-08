@@ -64,21 +64,24 @@ Route::get('/blog', 'App\Http\Controllers\DosenController@home');
 Route::get('/blog/tentang', 'App\Http\Controllers\DosenController@tentang');
 Route::get('/blog/kontak', 'App\Http\Controllers\DosenController@kontak');
 
-//route CRUD
+//Route CRUD Pegawai
 Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
 Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
 Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
 Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
 Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
-
-//Week 14
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/viewpegawai/{id}','App\Http\Controllers\PegawaiController@viewpegawai');
 
-//Week 15
+//Route CRUD Barang Belanja
 Route::get('/indexBarang','App\Http\Controllers\BarangController@indexBarang');
 Route::get('/indexBarang/hapus/{id}','App\Http\Controllers\BarangController@hapus');
 Route::get('/indexBarang/addbarang','App\Http\Controllers\BarangController@addbarang');
 Route::post('/indexBarang/storebarang','App\Http\Controllers\BarangController@storebarang');
+
+//Route CRUD Keyboard
+Route::get('/indexkeyboard','App\Http\Controllers\KeyboardController@indexkeyboard');
+
+
 
