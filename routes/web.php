@@ -75,3 +75,10 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 //Week 14
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/viewpegawai/{id}','App\Http\Controllers\PegawaiController@viewpegawai');
+
+//Week 15
+Route::get('/indexBarang','App\Http\Controllers\BarangController@indexBarang');
+Route::get('/indexBarang/hapus/{id}','App\Http\Controllers\BarangController@hapus');
+Route::get('/indexBarang/addbarang','App\Http\Controllers\BarangController@addbarang');
+Route::post('/indexBarang/storebarang','App\Http\Controllers\BarangController@storebarang');
+

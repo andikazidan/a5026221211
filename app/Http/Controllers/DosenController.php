@@ -38,4 +38,16 @@ class DosenController extends Controller
     public function formulir(){
         return view('formulir');
     }
+
+    public function home(){
+        return view('home');
+    }
+
+    public function tentang(){
+        return view('tentang');
+    }
+
+    public function kontak(){
+        return view('kontak');
+    }
 }

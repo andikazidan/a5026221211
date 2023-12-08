@@ -45,7 +45,7 @@
                             <input type="text" class="form-control" id="alamat" name="alamat" value="{{ $p->pegawai_alamat }}">
                         </div>
                     </div>
-                    <div class="col-sm-8 align-items-center mx-auto"><a href='/pegawai' class="btn btn-success">OK LAH</a></div>
+                    <div class="col-sm-8 align-items-center mx-auto"><a href='/pegawai' class="btn btn-success">Ok Computer</a></div>
                 </div>
             </div>
 
