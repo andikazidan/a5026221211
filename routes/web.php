@@ -82,6 +82,13 @@ Route::post('/indexBarang/storebarang','App\Http\Controllers\BarangController@st
 
 //Route CRUD Keyboard
 Route::get('/indexkeyboard','App\Http\Controllers\KeyboardController@indexkeyboard');
+Route::get('/indexkeyboard/hapuskeyboard/{id}','App\Http\Controllers\KeyboardController@hapuskeyboard');
+Route::get('/indexkeyboard/addkeyboard/{id}','App\Http\Controllers\KeyboardController@addkeyboard');
+Route::get('/indexkeyboard/viewkeyboard/{id}','App\Http\Controllers\KeyboardController@viewkeyboard');
+Route::get('/indexkeyboard/addkeyboard','App\Http\Controllers\KeyboardController@addkeyboard');
+Route::post('/indexkeyboard/storekeyboard','App\Http\Controllers\KeyboardController@storekeyboard');
+Route::get('/indexkeyboard/editkeyboard/{id}','App\Http\Controllers\KeyboardController@editkeyboard');
+Route::post('/indexkeyboard/updatekeyboard','App\Http\Controllers\KeyboardController@updatekeyboard');
 
 
 

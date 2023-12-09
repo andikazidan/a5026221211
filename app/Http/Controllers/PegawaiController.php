@@ -67,6 +67,7 @@ class PegawaiController extends Controller
 		return redirect('/pegawai');
 	}
 
+
 	// method untuk hapus data pegawai
 	public function hapus($id)
 	{

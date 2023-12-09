@@ -1,13 +1,11 @@
 @extends('master2')
 
-@section('title', 'Data Pegawai')
+@section('title', 'Data Keyboard')
 
 @section('konten')
-
-	<h2>www.malasngoding.com</h2>
 	<h3>Data Pegawai</h3>
 
-	<a href="/indexbarang" class="btn btn-primary"> + Tambah Pegawai Baru</a>
+	<a href="/indexkeyboard/addkeyboard" class="btn btn-primary"> + Tambah Keyboard Baru</a>
 
 	<br/>
     <p>Cari Data Pegawai :</p>
@@ -19,10 +17,10 @@
 
 	<table class="table table-striped table-hover">
 		<tr>
-			<th>Nama</th>
-			<th>Jabatan</th>
-			<th>Umur</th>
-			<th>Alamat</th>
+			<th>Kode Keyboard</th>
+			<th>Merk Keyboard</th>
+			<th>Stock Keyboard</th>
+			<th>Tersedia</th>
 			<th>Opsi</th>
 		</tr>
 		@foreach($keyboard as $p)
@@ -32,11 +30,11 @@
 			<td>{{ $p->stockkeyboard }}</td>
 			<td>{{ $p->tersedia }}</td>
 			<td>
-                {{-- <a href="/pegawai/viewpegawai/{{ $p->kodekeyboard }}" class="btn btn-success">View</a>
+                <a href="/indexkeyboard/viewkeyboard/{{ $p->kodekeyboard }}" class="btn btn-success">View</a>
 
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
+				<a href="/indexkeyboard/editkeyboard/{{ $p->kodekeyboard }}" class="btn btn-warning">Edit</a>
 
-				<a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger">Hapus</a> --}}
+				<a href="/indexkeyboard/hapuskeyboard/{{ $p->kodekeyboard }}" class="btn btn-danger">Hapus</a>
 			</td>
 		</tr>
 		@endforeach

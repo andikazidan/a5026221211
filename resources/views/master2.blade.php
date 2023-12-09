@@ -15,8 +15,9 @@
 
     <div class="container">
         <header>
-
-            <h2>Blog MalasNgoding</h2>
+            <br><br>
+            <h1>Andika Insan Patria</h1>
+            <h4>PWEB A - 5026221211</h4>
             <nav>
                 <a href="/blog">HOME</a>
                 |
@@ -42,7 +43,7 @@
         @yield('bawah')
         <hr />
         <footer>
-            <p>&copy; <a href="https://www.malasngoding.com">www.malasngoding.com</a>. 2018 - 2019</p>
+            <p>&copy; <a href="https://www.instagram.com/thesundaylens">Courtesy of Andika Insan</a> with love</p>
         </footer>
     </div>
 

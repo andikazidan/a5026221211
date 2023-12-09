@@ -7,7 +7,6 @@
 
 
     <table class="table table-hover">
-        <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
         <h3>Edit Pegawai</h3>
 
         <a href="/pegawai" class="btn btn-secondary"> Kembali</a>
@@ -58,7 +57,7 @@
                         <td><label for="first_name" class="col-xs-3 col-form-label mr-2">Alamat</label></td>
                         <td>
                             <div class="col-xs-9">
-                                <textarea required="required" class="form-control" id="jabatan" name="jabatan" value="{{ $p->pegawai_alamat }}"> </textarea>
+                                <textarea required="required" class="form-control" id="pegawai_alamat" name="pegawai_alamat" value="{{ $p->pegawai_alamat }}"> </textarea>
                             </div>
                         </td>
                     </div>

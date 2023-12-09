@@ -20,11 +20,11 @@ class KeyboardController extends Controller
 
 	}
     //READ
-	// method untuk menampilkan view form tambah pegawai
-	public function tambahkeyboard()
+	// method untuk menampilkan view form add pegawai
+	public function addkeyboard()
 	{
 		// memanggil view tambah
-		return view('tambahkeyboard');
+		return view('addkeyboard');
 	}
 
     //CREATE
@@ -32,7 +32,7 @@ class KeyboardController extends Controller
 	public function storekeyboard(Request $request)
 	{
 		// insert data ke table pegawai
-		DB::table('pegawai')->insert([
+		DB::table('keyboard')->insert([
 			'kodekeyboard' => $request->kodekeyboard,
 			'merkkeyboard' => $request->merkkeyboard,
 			'stockkeyboard' => $request->stockkeyboard,
@@ -45,10 +45,10 @@ class KeyboardController extends Controller
 
     //UPDATE
 	// method untuk keyboard
-	public function keyboard($id)
+	public function editkeyboard($id)
 	{
 		// mengambil data pegawai berdasarkan id yang dipilih
-		$pegawai = DB::table('keyboard')->where('kodekeyboard',$id)->get();
+		$keyboard = DB::table('keyboard')->where('kodekeyboard',$id)->get();
 		// passing data pegawai yang didapat ke view edit.blade.php
 		return view('editkeyboard',['keyboard' => $keyboard]);
 
@@ -56,17 +56,17 @@ class KeyboardController extends Controller
 
     //UPDATE
 	// update data pegawai
-	public function update(Request $request)
+	public function updatekeyboard(Request $request)
 	{
 		// update data pegawai
-		DB::table('keyboard')->where('kodekeyboard',$request->id)->update([
+		DB::table('keyboard')->where('kodekeyboard',$request->kodekeyboard)->update([
 			'kodekeyboard' => $request->kodekeyboard,
 			'merkkeyboard' => $request->merkkeyboard,
 			'stockkeyboard' => $request->stockkeyboard,
 			'tersedia' => $request->tersedia
 		]);
 		// alihkan halaman ke halaman pegawai
-		return redirect('/pegawai');
+		return redirect('/indexkeyboard');
 	}
 
     //DELETE
@@ -74,8 +74,7 @@ class KeyboardController extends Controller
 	public function hapuskeyboard($id)
 	{
 		// menghapus data pegawai berdasarkan id yang dipilih
-		DB::table('keyboard')->where('kodetersedia',$id)->delete();
-		DB::table('keyboard')->where('kode',$id)->delete();
+		DB::table('keyboard')->where('kodekeyboard',$id)->delete();
 
 		// alihkan halaman ke halaman pegawai
 		return redirect('/indexkeyboard');
@@ -87,7 +86,7 @@ class KeyboardController extends Controller
 		$cari = $request->cari;
 
     		// mengambil data dari table pegawai sesuai pencarian data
-		$pegawai = DB::table('keyboard')
+		$keyboard = DB::table('keyboard')
 		->where('merkkeyboard','like',"%".$cari."%")
 		->paginate();
 
@@ -96,13 +95,13 @@ class KeyboardController extends Controller
 
 	}
 
-    public function viewpegawai($id)
+    public function viewkeyboard($id)
     {
-        $pegawai = DB::table('pegawai')
-		->where('pegawai_id', $id)
+        $keyboard = DB::table('keyboard')
+		->where('kodekeyboard', $id)
         ->get();
 
-        return view('viewpegawai',['pegawai' => $pegawai]);
+        return view('viewkeyboard',['keyboard' => $keyboard]);
 
     }
 }
