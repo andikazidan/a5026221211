@@ -8,10 +8,10 @@
 	<a href="/indexkeyboard/addkeyboard" class="btn btn-primary"> + Tambah Keyboard Baru</a>
 
 	<br/>
-    <p>Cari Data Pegawai :</p>
-	<form  action="/pegawai/cari" method="GET" class="form-inline">
-		<input class="form-control" type="text" name="cari" placeholder="Cari Nama Pegawai... " value="{{ old("cari", isset($cari) ? $cari : '') }}">
-		<input type="submit" value="CARI" class="btn btn-info">
+    <p>Cari Data Keyboard :</p>
+	<form  action="/indexkeyboard/carikeyboard" method="GET" class="form-inline">
+		<input class="form-control" type="text" name="carikeyboard" placeholder="Cari Merk Keyboard... " value="{{ old("carikeyboard", isset($carikeyboard) ? $carikeyboard : '') }}">
+		<input type="submit" value="carikeyboard" class="btn btn-info">
 	</form>
 	<br/>
 

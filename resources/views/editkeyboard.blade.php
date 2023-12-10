@@ -41,7 +41,7 @@
                 </tr>
                 <tr>
 
-                    <div class="form-group row">
+                    {{-- <div class="form-group row">
                         <td><label for="first_name" class="col-xs-3 col-form-label mr-2">Tersedia</label></td>
                         <td>
                             <div class="col-xs-9">
@@ -49,7 +49,7 @@
                                     value="{{ $p->tersedia }}">
                             </div>
                         </td>
-                    </div>
+                    </div> --}}
                 </tr>
                 </tr>
 

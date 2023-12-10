@@ -13,9 +13,8 @@
     <form action="/indexkeyboard/storekeyboard" method="post" class="form-horizontal">
         {{ csrf_field() }}
         <div class="form-group row">
-            <label for="kodekeyboard" class="col-xl-1 col-form-label mr-2">kode keyboard</label>
             <div class="col-xs-9">
-                <input type="text" class="form-control" id="kodekeyboard" name="kodekeyboard">
+                <input type="hidden" class="form-control" id="kodekeyboard" name="kodekeyboard">
             </div>
         </div>
 
@@ -30,13 +29,6 @@
             <label for="stockkeyboard" class="col-xl-1 col-form-label mr-2">Stock Keyboard</label>
             <div class="col-xs-9">
                 <input type="text" class="form-control" id="stockkeyboard" name="stockkeyboard">
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label for="tersedia" class="col-xl-1 col-form-label mr-2">tersedia</label>
-            <div class="col-xs-9">
-                <input type="text" class="form-control" id="tersedia" name="tersedia">
             </div>
         </div>
 

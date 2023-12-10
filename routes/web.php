@@ -89,6 +89,7 @@ Route::get('/indexkeyboard/addkeyboard','App\Http\Controllers\KeyboardController
 Route::post('/indexkeyboard/storekeyboard','App\Http\Controllers\KeyboardController@storekeyboard');
 Route::get('/indexkeyboard/editkeyboard/{id}','App\Http\Controllers\KeyboardController@editkeyboard');
 Route::post('/indexkeyboard/updatekeyboard','App\Http\Controllers\KeyboardController@updatekeyboard');
+Route::get('/indexkeyboard/carikeyboard','App\Http\Controllers\KeyboardController@carikeyboard');
 
 
 

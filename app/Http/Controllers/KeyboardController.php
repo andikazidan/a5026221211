@@ -32,12 +32,19 @@ class KeyboardController extends Controller
 	public function storekeyboard(Request $request)
 	{
 		// insert data ke table pegawai
+        //if statement untuk ketersediaan
+        if($request->stockkeyboard > 0) {
+            $request->tersedia='Y';
+        }else {
+            $request->tersedia='N';
+        }
 		DB::table('keyboard')->insert([
 			'kodekeyboard' => $request->kodekeyboard,
 			'merkkeyboard' => $request->merkkeyboard,
 			'stockkeyboard' => $request->stockkeyboard,
-			'tersedia' => $request->tersedia
+            'tersedia' => $request->tersedia
 		]);
+
 		// alihkan halaman ke halaman pegawai
 		return redirect('/indexkeyboard');
 
@@ -58,6 +65,12 @@ class KeyboardController extends Controller
 	// update data pegawai
 	public function updatekeyboard(Request $request)
 	{
+        //if statement untuk ketersediaan
+        if($request->stockkeyboard > 0) {
+            $request->tersedia='Y';
+        }else {
+            $request->tersedia='N';
+        }
 		// update data pegawai
 		DB::table('keyboard')->where('kodekeyboard',$request->kodekeyboard)->update([
 			'kodekeyboard' => $request->kodekeyboard,
@@ -80,18 +93,18 @@ class KeyboardController extends Controller
 		return redirect('/indexkeyboard');
 	}
 
-    public function cari(Request $request)
+    public function carikeyboard(Request $request)
 	{
 		// menangkap data pencarian
-		$cari = $request->cari;
+		$carikeyboard = $request->carikeyboard;
 
     		// mengambil data dari table pegawai sesuai pencarian data
 		$keyboard = DB::table('keyboard')
-		->where('merkkeyboard','like',"%".$cari."%")
+		->where('merkkeyboard','like',"%".$carikeyboard."%")
 		->paginate();
 
     		// mengirim data pegawai ke view index
-		return view('indexkeyboard',['keyboard' => $keyboard, 'cari'=> $cari]);
+		return view('indexkeyboard',['keyboard' => $keyboard, 'carikeyboard'=> $carikeyboard]);
 
 	}
 
