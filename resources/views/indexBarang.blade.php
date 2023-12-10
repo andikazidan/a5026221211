@@ -21,8 +21,8 @@
 			<td>{{ $p->ID }}</td>
 			<td>{{ $p->KodeBarang }}</td>
 			<td>{{ $p->Jumlah }}</td>
-			<td>{{ $p->Harga }}</td>
-            <td>{{ $p->Harga*$p->Jumlah }}</td>
+            <td>{{ number_format($p->Harga, 0, ',', '.') }}</td>
+            <td>{{ number_format($p->Harga * $p->Jumlah, 0, ',', '.') }}</td>
 			<td>
 
 				<a href="/indexBarang/hapus/{{ $p->ID }}" class="btn btn-danger">Hapus</a>
