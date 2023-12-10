@@ -28,8 +28,10 @@
 			<td>{{ $p->kodekeyboard }}</td>
 			<td>{{ $p->merkkeyboard }}</td>
 			<td>{{ $p->stockkeyboard }}</td>
-			<td>{{ $p->tersedia }}</td>
-			<td>
+            <td>
+                <input type="checkbox" {{ $p->tersedia == 'Y' ? 'checked' : '' }} disabled>
+            </td>
+            <td>
                 <a href="/indexkeyboard/viewkeyboard/{{ $p->kodekeyboard }}" class="btn btn-success">View</a>
 
 				<a href="/indexkeyboard/editkeyboard/{{ $p->kodekeyboard }}" class="btn btn-warning">Edit</a>

@@ -3,10 +3,7 @@
 @section('title', 'Data Pegawai')
 
 @section('konten')
-
-	<h2>www.malasngoding.com</h2>
 	<h3>Data Pegawai</h3>
-
 	<a href="/pegawai/tambah" class="btn btn-primary"> + Tambah Pegawai Baru</a>
 
 	<br/>
@@ -19,6 +16,7 @@
 
 	<table class="table table-striped table-hover">
 		<tr>
+            <th>ID</th>
 			<th>Nama</th>
 			<th>Jabatan</th>
 			<th>Umur</th>
@@ -27,6 +25,7 @@
 		</tr>
 		@foreach($pegawai as $p)
 		<tr>
+            <td>{{ $p->pegawai_id }}</td>
 			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->pegawai_jabatan }}</td>
 			<td>{{ $p->pegawai_umur }}</td>
