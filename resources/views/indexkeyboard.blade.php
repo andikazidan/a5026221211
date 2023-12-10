@@ -28,9 +28,7 @@
 			<td>{{ $p->kodekeyboard }}</td>
 			<td>{{ $p->merkkeyboard }}</td>
 			<td>{{ $p->stockkeyboard }}</td>
-            <td>
-                <input type="checkbox" {{ $p->tersedia == 'Y' ? 'checked' : '' }} disabled>
-            </td>
+            <td><input type="checkbox" {{ $p->tersedia == 'Y' ? 'checked' : '' }} disabled></td>
             <td>
                 <a href="/indexkeyboard/viewkeyboard/{{ $p->kodekeyboard }}" class="btn btn-success">View</a>
 
