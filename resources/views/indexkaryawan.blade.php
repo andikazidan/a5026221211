@@ -28,6 +28,6 @@
 		@endforeach
 	</table>
     <a href="/indexkaryawan/addkaryawan" class="btn btn-success">Tambah Data</a>
-    {{-- {{ $keranjangbelanja->links() }} --}}
+    {{-- {{ $kkeranjangbelanja->links() }} --}}
 
     @endsection

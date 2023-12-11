@@ -8,7 +8,7 @@
     <a href="/indexkaryawan">Kembali</a>
 
     <br />
-    <br />
+
 
     <form action="/indexkaryawan/storekaryawan" method="post" class="form-horizontal">
         {{ csrf_field() }}

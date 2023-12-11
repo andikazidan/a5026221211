@@ -28,7 +28,7 @@ class KaryawanController extends Controller
 
     public function addkaryawan()
 	{
-		// memanggil view tambah
+		// memanggil view add
 		return view('addkaryawan');
 	}
 
