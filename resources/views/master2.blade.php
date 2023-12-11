@@ -19,11 +19,7 @@
             <h1>Andika Insan Patria</h1>
             <h4>PWEB A - 5026221211</h4>
             <nav>
-                <a href="/blog">HOME</a>
-                |
-                <a href="/blog/tentang">TENTANG</a>
-                |
-                <a href="/blog/kontak">KONTAK</a>
+                <a href="/indexkaryawan">Karyawan</a>
             </nav>
         </header>
         <hr />

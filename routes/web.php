@@ -91,5 +91,14 @@ Route::get('/indexkeyboard/editkeyboard/{id}','App\Http\Controllers\KeyboardCont
 Route::post('/indexkeyboard/updatekeyboard','App\Http\Controllers\KeyboardController@updatekeyboard');
 Route::get('/indexkeyboard/carikeyboard','App\Http\Controllers\KeyboardController@carikeyboard');
 
+//ROUTE CRUD Nilai Kuliah
+Route::get('/indexnilaikuliah','App\Http\Controllers\NilaiKuliahController@indexnilaikuliah');
+Route::get('/indexnilaikuliah/addnilaikuliah','App\Http\Controllers\NilaiKuliahController@addnilaikuliah');
+Route::post('/indexnilaikuliah/storenilaikuliah','App\Http\Controllers\NilaiKuliahController@storenilaikuliah');
 
+//Route CRUD Data Karyawan
+Route::get('/indexkaryawan','App\Http\Controllers\KaryawanController@indexkaryawan');
+Route::get('/indexkaryawan/hapuskaryawan/{id}','App\Http\Controllers\KaryawanController@hapuskaryawan');
+Route::get('/indexkaryawan/addkaryawan','App\Http\Controllers\karyawanController@addkaryawan');
+Route::post('/indexkaryawan/storekaryawan','App\Http\Controllers\karyawanController@storekaryawan');
 
