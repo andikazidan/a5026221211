@@ -19,6 +19,10 @@
             <h1>Andika Insan Patria</h1>
             <h4>PWEB A - 5026221211</h4>
             <nav>
+                <a href="/index">Pegawai</a> |
+                <a href="/indexkeyboard">Keyboard</a> |
+                <a href="/indexBarang">Barang</a> |
+                <a href="/indexnilaikuliah">Nilai Kuliah</a> |
                 <a href="/indexkaryawan">Karyawan</a>
             </nav>
         </header>
