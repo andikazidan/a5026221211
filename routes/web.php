@@ -65,14 +65,14 @@ Route::get('/blog/tentang', 'App\Http\Controllers\DosenController@tentang');
 Route::get('/blog/kontak', 'App\Http\Controllers\DosenController@kontak');
 
 //Route CRUD Pegawai
-Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
-Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
-Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
-Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
-Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
-Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
-Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
-Route::get('/pegawai/viewpegawai/{id}','App\Http\Controllers\PegawaiController@viewpegawai');
+Route::get('/index','App\Http\Controllers\PegawaiController@index');
+Route::get('/index/tambah','App\Http\Controllers\PegawaiController@tambah');
+Route::post('/index/store','App\Http\Controllers\PegawaiController@store');
+Route::get('/index/edit/{id}','App\Http\Controllers\PegawaiController@edit');
+Route::post('/index/update','App\Http\Controllers\PegawaiController@update');
+Route::get('/index/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
+Route::get('/index/cari','App\Http\Controllers\PegawaiController@cari');
+Route::get('/index/viewpegawai/{id}','App\Http\Controllers\PegawaiController@viewpegawai');
 
 //Route CRUD Barang Belanjaan
 Route::get('/indexBarang','App\Http\Controllers\BarangController@indexBarang');
